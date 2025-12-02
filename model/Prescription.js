@@ -11,7 +11,7 @@ const PrescriptionSchema = new mongoose.Schema({
             quantity: Number
         }
     ],
-    notes: { type: String }
+    notes: { type: String}
 }, { timestamps: true });
 
 module.exports = mongoose.model("Prescription", PrescriptionSchema); 
