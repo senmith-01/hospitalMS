@@ -10,6 +10,6 @@ const AdmissionSchema = new mongoose.Schema({
         note: String,
         date: { type: Date, default: Date.now }
     }]
-}, { timestamps: true });
+}, { timestamps:true });
 
 module.exports = mongoose.model("Admission", AdmissionSchema); 
