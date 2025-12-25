@@ -10,7 +10,7 @@ const LabTestSchema = new mongoose.Schema({
         default: "pending"
     },
     assignedTechnician: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-    reportFile: { String },
+    reportFile: { type: String },
     updatedDate: { type: Date }
 }, { timestamps: true });
 
